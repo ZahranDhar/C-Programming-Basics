@@ -4,29 +4,32 @@
 
 int main(){
 
-    int i,n,j=2;
-    float x=1;
+    int n;
 
-    printf("Enter number of terms.\n");
+    printf("Enter the number of terms.\n");
     scanf("%d",&n);
 
-    if (n==1)
+    if(n==1)
     {
-        printf("The sum is 1");
+        printf("The sum is 1.");
+    }
+    else if (n%2!=0)
+    {
+        printf("Enter an even number.\n");
     }
     else
     {
-        for(i=1; i<=n-1; i++)
-    {
-        x=x+(1.0/j);
-        j=j+2;
+        float i,sum=1;
+
+        for(i=2; i<=n; i=i+2)
+        {
+            sum=sum+(1/i);
+        }
+
+        printf("The sum of the series is %f.",sum);
+
     }
-
-        printf("The sum is %f",x); 
-
-    }
-
-
+    
     return 0;
 
 }
