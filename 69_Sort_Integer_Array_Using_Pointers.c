@@ -6,23 +6,23 @@ int sarr(int *p, int n);
 int main()
 {
 
-    int arr[100],n,i;
+    int arr[100],n,*i;
 
     printf("What is the size of array?\n");
     scanf("%d",&n);
 
     printf("Enter the elemetsts of array.\n");
 
-    for(i=0; i<n; i++)
+    for(i=&arr[0]; i<&arr[n]; i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",i);
     }
 
     sarr(&arr[0],n);
 
-    for(i=0; i<n; i++)
+    for(i=&arr[0]; i<&arr[n]; i++)
     {
-        printf("%d ",arr[i]);
+        printf("%d ",*i);
     }
     
     return 0;
