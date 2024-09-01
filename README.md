@@ -1,1 +1,1 @@
-This repository contains basic C programs that offer users a solid understanding of the following concepts: Display Content, User Input, If/Else Statements, Logical Operators, Loops, Recursion, Pointers, Different Libraries, etc. 
+This repository contains basic C programs that offer users a solid understanding of the following concepts: Display Content, User Input, If/Else Statements, Logical Operators, Loops, Recursion, Pointers, Linked Lists, Different Libraries, etc. 
