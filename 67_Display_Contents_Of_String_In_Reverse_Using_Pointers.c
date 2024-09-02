@@ -4,19 +4,18 @@
 
 int main()
 {
-    char name[10]="Zahran";
-    char *s=&name[0];
+    char *s= "Zahran";    
     char *e=s;
-    char *i;
 
     while(*e!='\0')
     {
         e++;
     }
     e--;
-    for(i=e; i>=s; i--)
+    while(e>=s)
     {
-        printf("%c",*i);
+        printf("%c",*e);
+        e--;
     }
 
     return 0;
