@@ -10,15 +10,25 @@ int main(){
     printf("Enter n\n");
     scanf("%d",&n);
 
-    x=0;
-    printf("0 ");
-    y=1;
-    printf("1 ");
-    for(i=1; i<=(n-2); i++)
+    if(n>=1)
     {
+       printf("0 "); 
+    }
+    if(n>=2)
+    {
+        printf("1 ");
+    }
+    if(n>2)
+    {
+        x=0;
+        y=1;
+    
+        for(i=1; i<=(n-2); i++)
+        {
         y=x+y;
         printf("%d ",y);
         x=y-x;
+        }
     }
 
     return 0;
