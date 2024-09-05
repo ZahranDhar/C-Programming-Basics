@@ -2,26 +2,36 @@
 
 #include <stdio.h>
 
-int main(){
-
-    int x,y,z;
-
-    printf("Give three numbers to compare\n");
-    scanf("%d,%d,%d",&x,&y,&z);
-
-    if(x>y && x>z)
+int main() 
+{
+    int a, b, c;
+    
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a,&b,&c);
+    
+    if (a > b) 
     {
-      printf("%d",x);  
-    }
-    else if (y>x && y>z)
-    {
-        printf("%d",y);
-    }
+        if (a > c) 
+        {
+            printf("The largest number is: %d\n", a);
+        } 
+        else 
+        {
+            printf("The largest number is: %d\n", c);
+        }
+    } 
     else 
     {
-        printf ("%d",z);
+        if (b > c) 
+        {
+            printf("The largest number is: %d\n", b);
+        } 
+        else 
+        {
+            printf("The largest number is: %d\n", c);
+        }
     }
 
     return 0;
-
 }
+
