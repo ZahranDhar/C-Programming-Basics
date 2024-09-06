@@ -1,7 +1,7 @@
 //Swap two numbers using functions (call-by-reference method).
 
 #include<stdio.h>
-
+void swap(int *, int *);
 int main()
 {
     int x,y;
@@ -21,5 +21,4 @@ void swap(int *x, int *y)
     *x=*y;
     *y=z;
 
-    return 0;
 }
