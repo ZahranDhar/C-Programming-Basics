@@ -1,28 +1,33 @@
 // Check whether a number is Armstrong number or not
 
 #include<stdio.h>
-// #include<math.h>
+#include<math.h>
 
 int main()
 {
-    int x,r,n,sum=0;
+    int x,r,n,l=0,sum=0;
 
     printf("Give a number.\n");
     scanf("%d",&x);
     n=x;
 
-    while(x>9)
+    while(x!=0)
     {
-        r=x%10;
-        sum=sum+(r*r*r);
-
+        l++;
         x=x/10;
     }
-    sum=sum+(x*x*x);
+    x=n;
+
+    while(x!=0)
+    {
+        r=x%10;
+        sum=sum+pow(r,l);
+        x=x/10;
+    }
 
     if(sum==n)
     {
-        printf("Thenumber is Armstrong.\n");
+        printf("The number is Armstrong.\n");
     }
     else
     {
