@@ -5,7 +5,7 @@
 int main(){
 
     int i,j=0;
-    char str[100], revstr[100];
+    char str[100];
 
     printf("Enter a string\n");
     scanf("%s",&str);
