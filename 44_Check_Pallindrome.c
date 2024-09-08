@@ -4,46 +4,34 @@
 
 int main(){
 
-    int i,j,k;
+    int i,j=0;
     char str[100], revstr[100];
 
     printf("Enter a string\n");
-    scanf("%s",str);
+    scanf("%s",&str);
 
     i=0;
     while(str[i]!='\0')
     {
         i++;
     }
-    
     i--;
-    for(j=(i); j>=0; j--)
-    {
-        revstr[(i-j)]=str[j];
-    }
 
-    for(j=0; j<=i; j++)
+    while(str[j]==str[i])
     {
-        if(str[j]==revstr[j])
+        if(j<i)
         {
-            k=1;
+            j++;
+            i--;
         }
         else
         {
-            k=0;
-            break;
+            printf("The string is pallindrome.\n");
+            return 0;
         }
     }
 
-    if(k==1)
-    {
-        printf("The string is a pallindrome");
-    }
-    else
-    {
-        printf("The string is not a pallindrome");
-    }
-
+    printf("The string is not pallindrome");
     return 0;    
 
 }
