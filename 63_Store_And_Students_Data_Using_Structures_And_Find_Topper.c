@@ -19,9 +19,11 @@ int main()
 
     for(i=0; i<n; i++)
     {
-        printf("What is the score of roll no.%d?",i+1);
+        printf("What is of roll no of student %d\n?",i+1);
+        scanf("%d",&s[i].r_no);
+
+        printf("What is the score of student %d\n?",i+1);
         scanf("%d",&s[i].marks);
-        s[i].r_no=i+1;
     }
 
     for(i=0; i<n; i++)
