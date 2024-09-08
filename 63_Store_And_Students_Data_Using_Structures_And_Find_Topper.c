@@ -24,6 +24,8 @@ int main()
 
         printf("What is the score of student %d\n?",i+1);
         scanf("%d",&s[i].marks);
+
+        printf("\n");
     }
 
     for(i=0; i<n; i++)
