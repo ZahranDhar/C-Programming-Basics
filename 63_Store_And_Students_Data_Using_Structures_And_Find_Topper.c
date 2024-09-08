@@ -33,7 +33,7 @@ int main()
         if(s[i].marks>tm)
         {
             tm=s[i].marks;
-            tr=i+1;
+            tr=s[i].r_no;
         }
         else
         {
