@@ -5,7 +5,7 @@
 int main()
 {
     char str[10];
-    char *s=str[0];
+    char *s=&str[0];
     char *e=s;         //*e=str[n-1], where n is the length of the string if it is known.
 
     printf("Enter a String to check pallindrome.\n");
