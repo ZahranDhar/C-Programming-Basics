@@ -4,7 +4,8 @@
 
 int main()
 {
-    char *s= "Zahran";    
+    char name[10]= "Zahran";
+    char *s=&name[0];    
     char *e=s;
 
     while(*e!='\0')
