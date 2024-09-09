@@ -5,7 +5,7 @@
 int main()
 {
     char name[10]= "Zahran";
-    char *s=&name[0];    
+    char *s=name;    
     char *e=s;
 
     while(*e!='\0')
